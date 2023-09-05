@@ -1,0 +1,146 @@
+@import url(https://db.onlinewebfonts.com/c/922c2987db76de0bd46a84173f7f626b?family=SilkSerif-Regular);
+
+@font-face {
+    font-family: "SilkSerif-Regular";
+    src: url("https://db.onlinewebfonts.com/t/922c2987db76de0bd46a84173f7f626b.eot");
+    src: url("https://db.onlinewebfonts.com/t/922c2987db76de0bd46a84173f7f626b.eot?#iefix")format("embedded-opentype"),
+    url("https://db.onlinewebfonts.com/t/922c2987db76de0bd46a84173f7f626b.woff2")format("woff2"),
+    url("https://db.onlinewebfonts.com/t/922c2987db76de0bd46a84173f7f626b.woff")format("woff"),
+    url("https://db.onlinewebfonts.com/t/922c2987db76de0bd46a84173f7f626b.ttf")format("truetype"),
+    url("https://db.onlinewebfonts.com/t/922c2987db76de0bd46a84173f7f626b.svg#SilkSerif-Regular")format("svg");
+}
+
+
+*{
+    margin: 0%;
+    box-sizing: border-box;
+    padding: 0%;
+    font-family: "SilkSerif-Regular";
+
+}
+
+body{
+    width: 100%;
+    height:100%;
+}
+
+
+
+#circle{
+    height: 50px;
+    width: 50px;
+    position: absolute;
+    margin: 5px;
+    border-radius: 50%;
+    border: 1px solid white;
+    pointer-events: none;
+    transform: translate(-50%, -50%);
+
+}
+body::-webkit-scrollbar{
+    display: none;
+}
+#background{
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    background-color:black;
+    z-index: -9;
+ 
+}
+#overlay{
+    width: 100%;
+    height: 100%;
+    z-index: 111;
+    position: fixed;
+    opacity: 5%;
+    background-color: black;
+    background-image: url("./source/transparent-plastic-texture-PNG.png");
+}
+
+#hero{
+    width: 100%;
+    height: 60vh;
+    position: relative;
+    /* border: 3px solid red; */
+
+}
+
+#hero nav {
+   display: flex;
+   justify-content:space-between;
+   align-items: center;
+   padding: 0px 50px;
+   height: 140px;
+}
+
+
+#hero nav  img{
+ width: 100px; 
+ }
+ #hero nav>img{
+    width: 125px;
+      
+    }
+
+
+#hero nav #links  {
+    display: flex;
+   align-items: center;
+   justify-content: space-evenly;
+   flex-grow: 0.2;
+   text-transform: capitalize;
+   font-size: 12px;
+   font-family: Georgia, 'Times New Roman', Times, serif;
+     }
+
+#hero nav #links a {
+text-decoration: none;
+color: white;
+ }
+
+ #hero >h1 {
+    text-align: center;
+    position: absolute;
+    width:75%;
+    top: 70%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 50px;
+    color: white;
+    font-weight: lighter;
+     }
+
+#down #image {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+     }
+#down  #image> img{
+    margin-top: 40px;
+    width: 20%;
+    height: 30%;
+}
+
+#down #text{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+#down #text >h3{
+    color: white;
+    text-align: center;
+    width: 25%;
+    display: inline-block;
+    line-height: 20px;
+    font-size: 20px;
+    margin-top: 5px;
+    font-weight: lighter;
+}
+#down #text >img{
+  width:100px;
+  opacity: 0;
+  margin: 35px; 
+}
